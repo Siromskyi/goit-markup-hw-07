@@ -56,7 +56,7 @@ h6 {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -71,6 +71,20 @@ h6 {
 .container-header {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .container-header {
+  }
+}
+
+.header-hide {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header-hide {
+    display: contents;
+  }
 }
 
 .bottom-frame {
@@ -119,8 +133,6 @@ h6 {
   background-color: var(--cl-hover);
 }
 .header-nav {
-  display: flex;
-  align-items: center;
   flex-grow: 1;
 }
 .contacts {
@@ -151,9 +163,45 @@ h6 {
   margin-left: auto;
   font-style: normal;
 }
+@media (max-width: 1200px) {
+  .menu-address {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
 
 .logo-header {
   margin-right: 76px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .logo-header {
+    margin-right: 120px;
+  }
+}
+.header-button {
+  display: none;
+  width: 40px;
+  height: 70px;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .header-button {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-button {
+    display: none;
+  }
+}
+
+.icon-mobile-menu {
+  stroke: var(--navy);
 }
 
 .logo {
@@ -188,8 +236,8 @@ h6 {
 }
 
 .section-hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   text-align: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -199,6 +247,13 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1440px;
+}
+
+@media (min-width: 1200px) {
+  .section-hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
 }
 
 .hero-text {
