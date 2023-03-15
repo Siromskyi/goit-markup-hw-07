@@ -204,6 +204,17 @@ h6 {
   stroke: var(--navy);
 }
 
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  max-width: 428px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--black);
+}
+
 .logo {
   color: var(--navy);
   font-family: "Raleway", sans-serif;
@@ -226,13 +237,26 @@ h6 {
 
 .hero-title {
   color: var(--white);
-  max-width: 496px;
-  font-size: 56px;
-  line-height: 1.07;
+  max-width: 320px;
+  font-size: 36px;
+  line-height: 1.111;
   text-align: center;
   letter-spacing: 0.02em;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
+}
+@media (min-width: 768px) {
+  .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-title {
+    margin-bottom: 48px;
+  }
 }
 
 .section-hero {
