@@ -69,7 +69,7 @@ h6 {
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .contacts:hover {
+  .container {
     width: 100%;
     max-width: 768px;
     margin-left: auto;
@@ -101,8 +101,6 @@ h6 {
   .container-header-desktop {
     display: flex;
     align-items: center;
-    width: 100%;
-    max-width: 1158px;
   }
 }
 .container-header-mobile {
@@ -473,7 +471,7 @@ h6 {
 }
 
 .advantages-icons-item {
-  flex-basis: calc((100%-72) / 4);
+  flex-basis: calc((100%-72px) / 4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -502,6 +500,13 @@ h6 {
 @media (max-width: 1200px) {
   .advantages-list {
     flex-wrap: wrap;
+    gap: 24px;
+    grid-row-gap: 72px;
+  }
+}
+@media (max-width: 768px) {
+  .advantages-list {
+    flex-direction: column;
     gap: 24px;
     grid-row-gap: 72px;
   }
