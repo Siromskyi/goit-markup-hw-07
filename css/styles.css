@@ -57,31 +57,11 @@ h6 {
 
 .container {
   width: 100%;
-  max-width: 480px;
+  max-width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 100%;
-    max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 100%;
-    max-width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 
 /*header*/
@@ -125,6 +105,11 @@ h6 {
   background-color: var(--white);
   transform: translateX(100%);
   transition: transform 500ms;
+}
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 .mobile-menu.is-open {
   transform: translateX(0);
@@ -451,8 +436,13 @@ h6 {
 
 /*advantages*/
 .advantages-icons-list {
-  display: flex;
-  gap: 24px;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .advantages-icons-list {
+    display: flex;
+    gap: 24px;
+  }
 }
 
 .advantages-icons-item {
@@ -511,6 +501,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 24px;
 }
 .list-general:not(:last-child) {
   margin-right: 24px;
