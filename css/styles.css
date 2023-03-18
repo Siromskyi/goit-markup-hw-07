@@ -741,6 +741,12 @@ h6 {
   margin-top: 16px;
   text-align: left;
 }
+
+.social-media-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .text-social-media {
   font-family: "Roboto";
   font-style: normal;
@@ -752,11 +758,16 @@ h6 {
 }
 
 .subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-subscribe {
   display: flex;
   gap: 24px;
+  flex-direction: column;
+  align-items: center;
 }
 .subscribe-label {
   display: block;
@@ -767,7 +778,7 @@ h6 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  width: 264px;
+  width: 398px;
   height: 40px;
   padding: 8px 16px;
   color: var(--white);
