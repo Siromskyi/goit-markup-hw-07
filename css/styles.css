@@ -527,6 +527,7 @@ h6 {
     flex-wrap: wrap;
     gap: 24px;
     grid-row-gap: 72px;
+    justify-content: flex-start;
   }
 }
 @media (max-width: 768px) {
@@ -726,10 +727,35 @@ h6 {
   flex-direction: column;
   gap: 72px 0;
 }
+@media (min-width: 768px) {
+  .container-footer {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 72px 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-footer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0;
+  }
+}
 .logo-text-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .logo-text-footer {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1200px) {
+  .logo-text-footer {
+    margin-right: 120px;
+  }
 }
 
 .text-footer {
@@ -747,6 +773,16 @@ h6 {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 768px) {
+  .social-media-footer {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1200px) {
+  .social-media-footer {
+    margin-right: 80px;
+  }
+}
 .text-social-media {
   font-family: "Roboto";
   font-style: normal;
@@ -762,12 +798,21 @@ h6 {
   flex-direction: column;
   align-items: center;
 }
-
+@media (min-width: 768px) {
+  .subscribe-form {
+    align-items: flex-start;
+  }
+}
 .form-subscribe {
   display: flex;
   gap: 24px;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .form-subscribe {
+    flex-direction: row;
+  }
 }
 .subscribe-label {
   display: block;
@@ -782,6 +827,11 @@ h6 {
   height: 40px;
   padding: 8px 16px;
   color: var(--white);
+}
+@media (min-width: 768px) {
+  .subscribe-input {
+    width: 264px;
+  }
 }
 
 .subscribe-input:focus {
