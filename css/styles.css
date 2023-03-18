@@ -416,6 +416,8 @@ h6 {
 }
 
 .hero-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -424,15 +426,38 @@ h6 {
 }
 
 .second-hero-text {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-align: center;
 }
-
+@media (min-width: 768px) {
+  .second-hero-text {
+    text-align: start;
+  }
+}
+@media (min-width: 1200px) {
+  .second-hero-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
 .text {
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+@media (min-width: 1200px) {
+  .text {
+    font-weight: 400;
+  }
 }
 
 /*main button*/
