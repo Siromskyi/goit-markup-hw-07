@@ -550,6 +550,11 @@ h6 {
 .section-we-doing {
   padding-top: 0px;
 }
+@media (max-width: 1200px) {
+  .section-we-doing {
+    display: none;
+  }
+}
 
 /*our team*/
 
