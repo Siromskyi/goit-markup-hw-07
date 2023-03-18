@@ -575,7 +575,11 @@ h6 {
   padding: 32px 0;
   padding-bottom: 0px;
 }
-
+@media (max-width: 1200px) {
+  .our-team-list {
+    flex-wrap: wrap;
+  }
+}
 .list {
   display: flex;
   align-items: center;
