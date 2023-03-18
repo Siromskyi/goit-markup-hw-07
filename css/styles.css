@@ -578,16 +578,19 @@ h6 {
 .our-team-list {
   display: flex;
   flex-direction: column;
+  gap: 72px 0;
 }
 @media (min-width: 768px) {
   .our-team-list {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 64px 24px;
   }
 }
 @media (min-width: 1200px) {
   .our-team-list {
     flex-direction: row;
+    gap: 0 24px;
   }
 }
 .list {
