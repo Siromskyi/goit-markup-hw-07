@@ -721,7 +721,6 @@ h6 {
   background-color: var(--navy);
   padding-top: 100px;
   padding-bottom: 100px;
-  margin: 0px, auto;
 }
 .container-footer {
   display: flex;
@@ -740,7 +739,6 @@ h6 {
   .container-footer {
     display: flex;
     justify-content: flex-start;
-    gap: 0;
   }
 }
 .logo-text-footer {
@@ -803,6 +801,11 @@ h6 {
   .subscribe-form {
     align-items: flex-start;
     padding-right: 45px;
+  }
+}
+@media (min-width: 1200px) {
+  .subscribe-form {
+    padding-right: 0;
   }
 }
 .form-subscribe {
