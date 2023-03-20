@@ -596,7 +596,15 @@ h6 {
 }
 
 /*our team*/
-
+.text-name-team {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  text-align: center;
+}
 .text-our-tem {
   text-align: center;
 }
@@ -769,7 +777,7 @@ h6 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 72px 24px;
+    gap: 72px 0;
   }
 }
 
@@ -781,6 +789,7 @@ h6 {
 @media (min-width: 768px) {
   .logo-text-footer {
     align-items: flex-start;
+    margin-right: 24px;
   }
 }
 @media (min-width: 1200px) {
@@ -822,12 +831,6 @@ h6 {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--white);
-}
-@media (min-width: 768px) {
-  .text-social-media {
-    display: flex;
-    align-items: flex-start;
-  }
 }
 
 .subscribe-form {
