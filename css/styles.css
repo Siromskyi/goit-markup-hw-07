@@ -396,7 +396,17 @@ h6 {
   background-position: center;
   background-size: 1440px;
 }
-
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero_image@2x.jpg);
+  }
+}
 @media (min-width: 1200px) {
   .section-hero {
     padding-top: 188px;
