@@ -834,7 +834,6 @@ h6 {
 }
 
 .subscribe-form {
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -850,7 +849,6 @@ h6 {
   }
 }
 .form-subscribe {
-  display: flex;
   gap: 24px;
   flex-direction: column;
   align-items: center;
@@ -869,11 +867,12 @@ h6 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  max-width: calc(100% - 30px);
-  width: 320px;
+  max-width: 100%;
+  width: 398px;
   height: 40px;
   padding: 8px 16px;
   color: var(--white);
+  margin-bottom: 16px;
 }
 @media (min-width: 768px) {
   .subscribe-input {
@@ -904,6 +903,7 @@ h6 {
   flex-direction: row;
   gap: 16px;
   transition: background-color var(--transition);
+  margin: 0 auto;
 }
 .button-subscribe:hover {
   background-color: var(--cl-hover);
