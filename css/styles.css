@@ -518,33 +518,27 @@ h6 {
 }
 .advantages-list {
   display: flex;
-  flex-direction: column;
-  gap: 72px 24px;
+  gap: 72px 0;
+  flex-wrap: wrap;
 }
 @media (min-width: 768px) {
   .advantages-list {
-    flex-wrap: wrap;
-    flex-direction: row;
     gap: 72px 24px;
     justify-content: flex-start;
   }
 }
 @media (min-width: 1200px) {
   .advantages-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 0 24px;
-    flex-direction: row;
     flex-wrap: nowrap;
   }
 }
 .advantages-item {
-  flex-basis: 100%;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .advantages-item {
-    flex-basis: calc((100%-24) / 2);
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 @media (min-width: 1200px) {
